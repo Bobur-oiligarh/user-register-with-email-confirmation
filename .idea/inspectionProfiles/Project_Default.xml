@@ -1,0 +1,55 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="163" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="tortoise" />
+            <item index="1" class="java.lang.String" itemvalue="psycopg2-binary" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E721" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="django.contrib.auth.models.User.roles" />
+          <option value="college.models.CertificateInterval.update" />
+          <option value="django.contrib.auth.models.User.location2" />
+          <option value="tortoise.models.Model.id" />
+          <option value="ptime.db.models.main.File.category_id" />
+          <option value="tortoise.queryset.QuerySet.num" />
+          <option value="ptime.db.models.main.Surah.reciter_id" />
+          <option value="tortoise.models.Model.name" />
+          <option value="tortoise.models.Model.file_type" />
+          <option value="tortoise.models.Model.title" />
+          <option value="tortoise.models.Model.file_size" />
+          <option value="ptime.db.models.main.Category.parent_id" />
+          <option value="tortoise.models.Model.photo" />
+          <option value="bool.__getitem__" />
+          <option value="ptime.db.models.quiz.QuizSession.quiz_id" />
+          <option value="ptime.db.models.quiz.Poll.question_id" />
+          <option value="list.__getitem__" />
+          <option value="tortoise.queryset.QuerySet.name" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="SqlDialectInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="SqlNoDataSourceInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>
