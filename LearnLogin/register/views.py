@@ -81,48 +81,5 @@ class LoginView(View):
                 return redirect('/')
         return render(request, 'login.html', {'form':form})
 
-# def register(request):
-#
-#     if request.method =='POST':
-#         form = UserRegisterForm(request.POST)
-#         if form.is_valid():
-#             subject = 'Welcome to Thinkland'
-#             message = 'Hope you are enjoying your Django Tutorials'
-#             email = form.cleaned_data.get('email')
-#             send_mail(subject, message, 'boburjon@thinkland.uz', ['email'], fail_silently=False)
-#
-#             user = form.save()
-#             username = user.username
-#             password = user.password
-#             new_user = Person(username = username, password = password)
-#             new_user.save()
-#             messages.success(request, "You were succesfully registered")
-#
-#             return render(request, 'success.html', {'recepient':email})
-#
-#         else:
-#             messages.error(request, "Registration Error")
-#     else:
-#         form = UserRegisterForm()
-#     return render(request, 'registration.html', {'form':form})
 
-
-# def  sendmail(request):
-#     if request.method =='POST':
-#         form = ContactForm(request.POST)
-#         if form.is_valid():
-#             subject = form.cleaned_data['subject']
-#             message = form.cleaned_data['content']
-#             recepient = 'uboiligarh@gmail.com'
-#             mail = send_mail(subject, message, 'boburjon@thinkland.uz', [recepient], fail_silently=False)
-#             if mail:
-#                 messages.success(request, "Mail is succesfully sended.")
-#                 return redirect('sendmail')
-#             else:
-#                 messages.error(request, "Sending error")
-#         else:
-#             messages.error(request, 'Mail is not valid')
-#     else:
-#         form = ContactForm()
-#     return render(request, 'sendmail.html', {'form': form})
 
